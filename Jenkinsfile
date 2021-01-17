@@ -1,15 +1,11 @@
 pipeline {
-    agent none 
+    agent any 
     stages {
-        stage('Build') { 
-            agent {
-                docker {
-                    image 'python:2-alpine' 
-                }
-            }
+        stage('git') { 
             steps {
-                sh 'python -m hello.py' 
-                stash(name: 'compiled-results', includes: '/*.py*') 
+               git credentialsId: 'a7fcf27b-4a62-448e-89e2-4895f6f0ef14', url: 'https://github.com/divyas5/JavaPrograms.git'
+               bat 'git.bat'
+          
             }
         }
     }
