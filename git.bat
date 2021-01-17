@@ -1,0 +1,1 @@
+"C:\Users\divyas5\AppData\Local\Programs\Python\Python38\python.exe" "C:\Program Files (x86)\Jenkins\workspace\python-github\hello.py"
