@@ -1,5 +1,5 @@
 pipeline {
-    agent any 
+    agent test_node
     stages {
         stage('git') { 
             steps {
